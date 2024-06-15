@@ -1,0 +1,40 @@
+h1{
+    font-size: 64px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 600;
+    padding-top: 40px;
+    }    
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 70px;
+    padding-bottom: 20px;
+}
+
+.text-image-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.text-block {
+    flex: 0.7;
+    text-align: left;
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+}
+
+.image-container {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 250px;
+    height: auto;
+}

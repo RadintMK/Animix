@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block title %}Студии{% endblock %}
+
+{% block style %}<link rel="stylesheet" href="{% static 'main/css/studios.css' %}">{% endblock %}
+
+{% block content %}
+<h1>Мультфильмы</h1>
+<div class="content-container">
+    {% for cartoon in cartoons %}
+    <div class="text-image-container">
+        <div class="text-block">
+            {{ cartoon.name }}<br><br>
+            {{ cartoon.description }}
+        </div>
+        <div class="image-container">
+            <img src="{{ cartoon.poster_image.url }}" alt="{{ cartoon.name }}">
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
